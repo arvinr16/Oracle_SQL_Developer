@@ -2,5 +2,5 @@
 ## Ini adalah dokumentasi saya tentang Pelajaran yang saya ikuti yaitu 'Database Design &amp; Programming with SQL'
 
 <p>
-    <img src="images/asciiIMG.png" alt="asciiArt" style="width: 300px;" />
+    <img src="images/asciiIMG.png" alt="asciiArt" style="width: 250px;" />
 </p>

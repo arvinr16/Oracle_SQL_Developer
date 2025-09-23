@@ -6,14 +6,6 @@
 
 
 
-=> Beberapa command SQL yang bisa digunakan:
-1. 'SELECT * FROM all_users;' = Digunakan untuk melihat user yang terdaftar di SQL Developer App.
-2. 'SELECT tables_name FROM user_tables; = Digunakan untuk melihat tabel-tabel yang ada pada suatu users.
-3. 'SELECT * FROM (nama table);' = Digunakan untuk menampilkan beberapa isi data dari sebuah table.
-<----------------------------------------------------------------------------------------------------------------------------->
-
-
-
 => Beberapa Query SQL PLUS tentang USER yang bisa digunakan:
 1. 'CREATE USER (nama user) IDENTIFIED BY (password user); = Digunakan untuk membuat user baru di SQLPLUS.
 
@@ -96,3 +88,17 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 => Query untuk filtering:
 1. 'SELECT * FROM (nama_table) WHERE (nama_kolom) = (data_yang_difilter);'
    Digunakan untuk memfilter data Kolom pada suatu Table.
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+=> Query lain yang penting:
+1. 'SELECT * FROM all_users;' = Digunakan untuk melihat user yang terdaftar di SQL Developer App.
+
+2. 'SELECT table_name FROM user_tables; = Digunakan untuk melihat daftar table yang dimiliki user.
+
+3. 'SELECT * FROM (nama table);' = Digunakan untuk menampilkan beberapa isi data dari sebuah table.
+
+4. 'SHOW CON_NAME;' = Digunakan untuk menampilkan Service/Container yang aktif.
+
+5. 'SELECT role FROM dba_roles;' = Digunakan untuk menampilkan semua role yang ada di Service/Container.

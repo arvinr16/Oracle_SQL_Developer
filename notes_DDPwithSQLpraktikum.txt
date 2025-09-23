@@ -1,0 +1,49 @@
+<== Notes ==>
+1. Mengumpulkan tugas dijadikan satu file PDF saja, tidak perlu dipisah satu-satu.
+2. Download Oracle Database XE
+3. Perlu diingat bahwasanya harus ingat passwordnya pada proses instalasi app tersebut
+<----------------------------------------------------------------->
+
+
+=> Beberapa command SQL yang bisa digunakan:
+1. 'SELECT * FROM all_users;' = Digunakan untuk melihat user yang terdaftar di SQL Developer App.
+2. 'SELECT tables_name FROM user_tables; = Digunakan untuk melihat tabel-tabel yang ada pada suatu users.
+3. 'SELECT * FROM (nama table);' = Digunakan untuk menampilkan beberapa isi data dari sebuah table.
+<----------------------------------------------------------------->
+
+
+=> Beberapa Query SQL PLUS yang bisa digunakan:
+1. 'CREATE USER (nama user) IDENTIFIED BY (password user); = Digunakan untuk membuat user baru di SQLPLUS.
+
+2. 'GRANT CONNECT, RESOURCE TO (nama user); = Digunakan untuk memberikan hak akses minimal.
+
+3. 'DROP USER (nama user) CASCADE; = Digunakan untuk menghapus user yang telah ada.
+
+4. 'SELECT username FROM dba_users;' = Digunakan untuk mengecek daftar user yang ada.
+   'SELECT username FROM all_users;' = Bisa menggunakan ini jika tidak ada akses ke DBA.
+   'SELECT * FROM (nama user);'     = Digunakan untuk melihat user yang kita punya aksesnya.
+
+5. 'SHOW USER' = Digunakan untuk melihat user yang sedang aktif saat ini.
+
+6. 'CONNECT (nama_user)/(password)@(nama_servis);' = Bisa digunakan untuk mengganti user ketika kita sudah-
+                                                     di dalam SQL PLUS.
+   'CONN (nama_user)/(password)@(nama_servis);'    = Ini adalah versi singkat untuk mengganti user.
+                                                     Kita bisa menggunakan service name berupa 'XE', 'XEPDB1'.
+
+7. 'ALTER USER (nama_user) IDENTIFIED BY (password_baru);' = Digunakan untuk mereset password user yang ada.
+
+8. 'ALTER USER (nama_user) ACCOUNT LOCK;'   = Digunakan untuk menonaktifkan user.
+   'ALTER USER (nama_user) ACCOUNT UNLOCK;' = Digunakan untuk mengaktifkan user.
+
+9. 'CLEAR SCREEN' = Digunakan untuk membersihkan tampilan CLI SQL PLUS dari command-command yang sudah dijalankan.
+<----------------------------------------------------------------->
+
+=> Beberapa Query SQL PLUS yang bisa digunakan untuk memberikan hak akses, dll:
+1. 'GRANT ALL PRIVILEGES to (nama_user);' = Digunakan untuk memberikan semua hak akses kepada suatu user.
+
+2. 'GRANT CONNECT to (nama_user);' = Digunakan untuk kita bisa login ke user yang dipilih di Query tersebut.
+
+3. 'SELECT * FROM dba_sys_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat hak akses user 'System Privileges'.
+   'SELECT * FROM dba_tab_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat hak akses user 'Object Privileges'.
+   'SELECT * FROM dba_role_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat 'role' yang dimilik user.
+   *untuk nama user jika ingin melihat hak akses harus KAPITAL semua ya hurufnya.

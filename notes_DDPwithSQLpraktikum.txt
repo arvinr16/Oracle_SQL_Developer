@@ -2,17 +2,19 @@
 1. Mengumpulkan tugas dijadikan satu file PDF saja, tidak perlu dipisah satu-satu.
 2. Download Oracle Database XE
 3. Perlu diingat bahwasanya harus ingat passwordnya pada proses instalasi app tersebut
-<----------------------------------------------------------------->
+<----------------------------------------------------------------------------------------------------------------------------->
+
 
 
 => Beberapa command SQL yang bisa digunakan:
 1. 'SELECT * FROM all_users;' = Digunakan untuk melihat user yang terdaftar di SQL Developer App.
 2. 'SELECT tables_name FROM user_tables; = Digunakan untuk melihat tabel-tabel yang ada pada suatu users.
 3. 'SELECT * FROM (nama table);' = Digunakan untuk menampilkan beberapa isi data dari sebuah table.
-<----------------------------------------------------------------->
+<----------------------------------------------------------------------------------------------------------------------------->
 
 
-=> Beberapa Query SQL PLUS yang bisa digunakan:
+
+=> Beberapa Query SQL PLUS tentang USER yang bisa digunakan:
 1. 'CREATE USER (nama user) IDENTIFIED BY (password user); = Digunakan untuk membuat user baru di SQLPLUS.
 
 2. 'GRANT CONNECT, RESOURCE TO (nama user); = Digunakan untuk memberikan hak akses minimal.
@@ -36,14 +38,37 @@
    'ALTER USER (nama_user) ACCOUNT UNLOCK;' = Digunakan untuk mengaktifkan user.
 
 9. 'CLEAR SCREEN' = Digunakan untuk membersihkan tampilan CLI SQL PLUS dari command-command yang sudah dijalankan.
-<----------------------------------------------------------------->
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
 
 => Beberapa Query SQL PLUS yang bisa digunakan untuk memberikan hak akses, dll:
 1. 'GRANT ALL PRIVILEGES to (nama_user);' = Digunakan untuk memberikan semua hak akses kepada suatu user.
 
 2. 'GRANT CONNECT to (nama_user);' = Digunakan untuk kita bisa login ke user yang dipilih di Query tersebut.
 
-3. 'SELECT * FROM dba_sys_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat hak akses user 'System Privileges'.
-   'SELECT * FROM dba_tab_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat hak akses user 'Object Privileges'.
+3. 'GRANT DBA TO (nama_user);' = Digunakan untuk memberikan hak SUPERUSER, gunakan dengan hati-hati!
+
+4. 'SELECT * FROM dba_sys_privs WHERE grantee = '(NAMA_USER);'  = Digunakan untuk melihat hak akses user 'System Privileges'.
+   'SELECT * FROM dba_tab_privs WHERE grantee = '(NAMA_USER);'  = Digunakan untuk melihat hak akses user 'Object Privileges'.
    'SELECT * FROM dba_role_privs WHERE grantee = '(NAMA_USER);' = Digunakan untuk melihat 'role' yang dimilik user.
    *untuk nama user jika ingin melihat hak akses harus KAPITAL semua ya hurufnya.
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+=> Beberapa Query untuk manajemen Table:
+1. 'CREATE TABLE (nama_table) (
+      customer_id NUMBER PRIMARY KEY,
+      name        VARCHAR2(50),
+      email       VARCHAR2(100)
+);
+Digunakan untuk membuat table sederhana menggunakan Query.
+
+2. 'SELECT table_name FROM user_tables;' = Digunakan untuk melihat daftar table yang dimiliki user.
+
+3. 'ALTER TABLE (nama_table) ADD (nama_kolom) contoh: phone VARCHAR2(20);' = Digunakan untuk menambah Kolom ke Table.
+
+4. 'ALTER TABLE (nama_table) DROP COLUMN (nama_kolom);' = Digunakan untuk menghapus Kolom dari Table.
+
+5. 'DROP TABLE (nama_table);' = Digunakan untuk menghapus Table.

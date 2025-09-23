@@ -62,7 +62,7 @@
       customer_id NUMBER PRIMARY KEY,
       name        VARCHAR2(50),
       email       VARCHAR2(100)
-);
+);'
 Digunakan untuk membuat table sederhana menggunakan Query.
 
 2. 'SELECT table_name FROM user_tables;' = Digunakan untuk melihat daftar table yang dimiliki user.
@@ -72,3 +72,20 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 4. 'ALTER TABLE (nama_table) DROP COLUMN (nama_kolom);' = Digunakan untuk menghapus Kolom dari Table.
 
 5. 'DROP TABLE (nama_table);' = Digunakan untuk menghapus Table.
+
+6. 'SELECT COUNT(*) FROM TESTING;' = Digunakan untuk melihat isi tabel, apakah benar-benar kosong atau tidak ada data.
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+=> Beberapa Query untuk Query Data/ DML(Data Manipulation Language):
+1. 'INSERT INTO (nama_table) (customer_id, name, email) VALUES (1, 'Paijo', 'paijo@email.com');'
+   Digunakan untuk mengisi data pada Table. 
+
+2. 'SELECT * FROM (nama_table);' = Digunakan untuk menampilkan semua data pada Table.
+
+3. 'UPDATE (nama_table) SET (nama_kolom) = (data_yang_diupdate) WHERE (nama_id) = (nomor_id);'
+   Digunakan untuk mengupdate Data Kolom pada suatu Table.
+
+4. 'DELETE FROM (nama_table) where (nama_kolom) = (data_yang_dihapus);'
+   Digunakan untuk menghapus Data pada Kolom pada suatu Table.

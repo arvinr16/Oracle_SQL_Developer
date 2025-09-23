@@ -87,5 +87,12 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 3. 'UPDATE (nama_table) SET (nama_kolom) = (data_yang_diupdate) WHERE (nama_id) = (nomor_id);'
    Digunakan untuk mengupdate Data Kolom pada suatu Table.
 
-4. 'DELETE FROM (nama_table) where (nama_kolom) = (data_yang_dihapus);'
+4. 'DELETE FROM (nama_table) where (nama_kolom) = (no_id_data_yang_dihapus);'
    Digunakan untuk menghapus Data pada Kolom pada suatu Table.
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+=> Query untuk filtering:
+1. 'SELECT * FROM (nama_table) WHERE (nama_kolom) = (data_yang_difilter);'
+   Digunakan untuk memfilter data Kolom pada suatu Table.

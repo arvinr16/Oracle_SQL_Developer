@@ -62,6 +62,7 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 3. 'ALTER TABLE (nama_table) ADD (nama_kolom) contoh: phone VARCHAR2(20);' = Digunakan untuk menambah Kolom ke Table.
 
 4. 'ALTER TABLE (nama_table) DROP COLUMN (nama_kolom);' = Digunakan untuk menghapus Kolom dari Table.
+   contoh: 'ALTER TABLE nama_orang DROP COLUMN id_nama;'
 
 5. 'DROP TABLE (nama_table);' = Digunakan untuk menghapus Table.
 
@@ -72,7 +73,8 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 
 => Beberapa Query untuk Query Data/ DML(Data Manipulation Language):
 1. 'INSERT INTO (nama_table) (customer_id, name, email) VALUES (1, 'Paijo', 'paijo@email.com');'
-   Digunakan untuk mengisi data pada Table. 
+   Digunakan untuk mengisi data pada Table.
+   contoh: 'INSERT INTO nama_wayang (id_nama, nama, alamat) values (1, 'Semar', 'Jawa');'
 
 2. 'SELECT * FROM (nama_table);' = Digunakan untuk menampilkan semua data pada Table.
 
@@ -102,3 +104,18 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 4. 'SHOW CON_NAME;' = Digunakan untuk menampilkan Service/Container yang aktif.
 
 5. 'SELECT role FROM dba_roles;' = Digunakan untuk menampilkan semua role yang ada di Service/Container.
+
+6. Syntax Komentar: 1. Satu line atau satu garis cukup menggunakan '--'
+                       contoh: '-- Testing --'
+                    2. Multiple line atau banyak baris bis menggunakan '/**/'
+                       contoh: '/* Testing */'
+<----------------------------------------------------------------------------------------------------------------------------->
+
+<== Notes Penting ==>
+1. Besok ketika sudah membuat aplikasi real atau proses pembangunan aplikasi menggunakan framework seperti 'Laravel', kita-
+   sebenarnya tidak terlalu membutuhkan kode-kode dari SQL ini, namun pembelajaran SQL ini penting untuk dilakukan untuk-
+   tujuan pemahaman fundamental dalam bagian 'Database'.
+   Ketika kita membuat aplikasi dengan menggunakan framework seperti 'Laravel' pada saat kita input data untuk bagian database,-
+   kita tidak perlu menggunakan kode bahasa SQL, tetapi kita akan langsung menggunakan kode bahasa PHP, yang nantinya pada-
+   setiap data yang kita inputkan menggunakan kode bahasa PHP tersebut, akan langsung otomatis masuk ke Blueprint database-
+   framework 'Laravel' yang kita gunakan.

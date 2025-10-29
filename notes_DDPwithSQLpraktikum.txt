@@ -90,6 +90,30 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 => Query untuk filtering:
 1. 'SELECT * FROM (nama_table) WHERE (nama_kolom) = (data_yang_difilter);'
    Digunakan untuk memfilter data Kolom pada suatu Table.
+2. 'LENGTH' = Digunakan untuk menampilkan jumlah karakter dari sebuah kolom pada table.
+3. 'SUBSTR' = Digunakan untuk menampilkan 5 huruf pertama dari sebuah kolom pada table.
+4. 'SELECT (nama column) NVL2(nama column, 'Pernyataan', 'Pernyataan jika tidak ditemukan') as (column baru) from (nama table);
+   Contoh: 
+   = Digunakan untuk membuat suatu pernyataan pada sebuah column table, bukan hanya pernyataan saja tetapi memberikan solusi-
+   jika pernyataan tersebut salah atau tidak ditemukan.
+5. 'SELECT
+     (nama column),
+     case
+      when (nama column) > (pernyataan tentang angka) then '(Pernyataan)'
+      when (nama column) > (pernyataan tentang angka) then '(Pernyataan)'
+      else '(pernyataan jika tidak ditemukan)'
+     end as (column untuk menampilkan data yang diberikan pernyataan)
+     from (nama column);
+     Contoh:
+     select
+      Nama_Produk,
+      Harga,
+      case
+         when Harga > 10000000 then 'Premium'
+         when Harga > 2000000 then 'Menengah'
+         else 'Murah'
+      end as Label_Harga
+      from produk;
 <----------------------------------------------------------------------------------------------------------------------------->
 
 

@@ -59,7 +59,13 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 
 2. 'SELECT table_name FROM user_tables;' = Digunakan untuk melihat daftar table yang dimiliki user.
 
-3. 'ALTER TABLE (nama_table) ADD (nama_kolom) contoh: phone VARCHAR2(20);' = Digunakan untuk menambah Kolom ke Table.
+3. 'ALTER TABLE (nama_table) ADD (nama_kolom) = Digunakan untuk menambah Kolom ke Table.
+   contoh: ALTER TABLE Handphone ADD Iphone VARCHAR2(20);'
+   contoh kalau ingin langsung menambahkan beberapa kolom: 'ALTER TABLE Handphone
+                                                            ADD (
+                                                               Merek VARCHAR2(30),
+                                                               Tahun_Rilis NUMBER(4)
+                                                            );'
 
 4. 'ALTER TABLE (nama_table) DROP COLUMN (nama_kolom);' = Digunakan untuk menghapus Kolom dari Table.
    contoh: 'ALTER TABLE nama_orang DROP COLUMN id_nama;'
@@ -75,14 +81,25 @@ Digunakan untuk membuat table sederhana menggunakan Query.
 1. 'INSERT INTO (nama_table) (customer_id, name, email) VALUES (1, 'Paijo', 'paijo@email.com');'
    Digunakan untuk mengisi data pada Table.
    contoh: 'INSERT INTO nama_wayang (id_nama, nama, alamat) values (1, 'Semar', 'Jawa');'
+   contoh mengisi values dengan tipe data DATE: 'INSERT INTO nama_tabel (kolom_date)
+                                                 VALUES (TO_DATE('dd-mm-yyyy', 'dd-mm-yyyy'));'
 
 2. 'SELECT * FROM (nama_table);' = Digunakan untuk menampilkan semua data pada Table.
 
 3. 'UPDATE (nama_table) SET (nama_kolom) = (data_yang_diupdate) WHERE (nama_id) = (nomor_id);'
    Digunakan untuk mengupdate Data Kolom pada suatu Table.
+   contoh: 'UPDATE Mahasiswa
+            SET Kota = 'Surabaya'
+            WHERE Kota = 'Jakarta';'
 
 4. 'DELETE FROM (nama_table) where (nama_kolom) = (no_id_data_yang_dihapus);'
    Digunakan untuk menghapus Data pada Kolom pada suatu Table.
+5. 'INSERT ALL
+    INTO jurusan VALUES ('SI', 'Sistem Informasi')
+    INTO jurusan VALUES ('IF', 'Teknik Informatika')
+    INTO jurusan VALUES ('DKV', 'Desain Grafis')
+   SELECT 1 FROM DUAL;'
+   Query tersebut digunakan untuk menambahkan beberapa values dari sebuah kolom table secara bersamaan
 <----------------------------------------------------------------------------------------------------------------------------->
 
 

@@ -2,8 +2,9 @@
 1. Mengumpulkan tugas dijadikan satu file PDF saja, tidak perlu dipisah satu-satu.
 2. Download Oracle Database XE
 3. Perlu diingat bahwasanya harus ingat passwordnya pada proses instalasi app tersebut
+4. Untuk menambahkan alias pada nama kolom, dengan cara kita menambahkan alias satu character-
+   setelah FROM pada query.
 <----------------------------------------------------------------------------------------------------------------------------->
-
 
 
 => Beberapa Query SQL PLUS tentang USER yang bisa digunakan:

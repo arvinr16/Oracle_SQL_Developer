@@ -1,2 +1,9 @@
 ==> Notes Fundamental SQL (Structure Query Language) <==
 Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
+
+=> Persamaan antara Oracle SQL Data Modeler dan Oracle SQL Developer
+1. Entitas  =   Tabel
+   >Oracle SQL Data Modeler
+    Entitas adalah objek konsep yang mewakili sesuatu di dunia nyata.
+   >Oracle SQL Developer
+    Entitas akan berubah menjadi Tabel, Nama entitas = nama tabel.

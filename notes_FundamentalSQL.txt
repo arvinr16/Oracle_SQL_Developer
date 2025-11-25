@@ -1,0 +1,2 @@
+==> Notes Fundamental SQL (Structure Query Language) <==
+Berikut adalah dokumentasi saya mengenai dasar-dasar SQL

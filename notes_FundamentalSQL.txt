@@ -5,5 +5,15 @@ Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
 1. Entitas  =   Tabel
    >Oracle SQL Data Modeler
     Entitas adalah objek konsep yang mewakili sesuatu di dunia nyata.
+    Contoh: Pelanggan, Mobil, Transaksi, dll.
    >Oracle SQL Developer
     Entitas akan berubah menjadi Tabel, Nama entitas = nama tabel.
+
+2. Atribut  =   Kolom (Field)
+   >Oracle SQL Data Modeler
+    Atribut adalah data yang dimiliki oleh suatu entitas.
+    Contoh: ID_Pelanggan, Nama, Alamat, dll.
+   >Oracle SQL Developer
+    Atribut akan berubah menjadi kolom di dalam tabel.
+
+3. 

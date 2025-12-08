@@ -17,3 +17,15 @@ Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
     Atribut akan berubah menjadi kolom di dalam tabel.
 
 3. 
+
+=> Perbedaan antara Oracle SQL Data Modeler dan Oracle SQL Developer
+1. Foreign Key:
+   >Oracle SQL Data Modeler
+    Tidak perlu buat manual di tabel/entitas kolom untuk menyimpan Foreign Key.
+    1. Jangan buat attribut FK secara manual.
+    2. Buat relasi antar entitas.
+    3. Biarkan Data Modeler yang membuat FK nanti di Physical Model.
+   >Oracle SQL Developer
+    Wajib membuat kolom/attribut secara manual untuk menyimpan Foreign Key.
+    1. Wajib punya kolom FK.
+    2. Baru bisa mempunyai Foreign Key.

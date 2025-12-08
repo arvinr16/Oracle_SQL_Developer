@@ -99,8 +99,8 @@ Digunakan untuk membuat table sederhana menggunakan Query.
     INTO jurusan VALUES ('SI', 'Sistem Informasi')
     INTO jurusan VALUES ('IF', 'Teknik Informatika')
     INTO jurusan VALUES ('DKV', 'Desain Grafis')
-   SELECT 1 FROM DUAL;'
-   Query tersebut digunakan untuk menambahkan beberapa values dari sebuah kolom table secara bersamaan
+   SELECT 1 FROM DUAL;' = Digunakan untuk penutup query 'INSERT ALL' yang berfungsi sebagai sumber-
+                          1 baris atau mengeksekusi seluruh perintah 'INSERT ALL' tersebut sekali.
 <----------------------------------------------------------------------------------------------------------------------------->
 
 

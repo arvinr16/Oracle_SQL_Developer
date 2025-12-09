@@ -94,7 +94,11 @@ Digunakan untuk membuat table sederhana menggunakan Query.
             WHERE Kota = 'Jakarta';'
 
 4. 'DELETE FROM (nama_table) where (nama_kolom) = (no_id_data_yang_dihapus);'
-   Digunakan untuk menghapus Data pada Kolom pada suatu Table.
+   Digunakan untuk menghapus Data Kolom pada suatu Table.
+   Contoh: 'DELETE FROM Mobil WHERE ID_Mobil = 'MB001';'
+   Contoh untuk menghapus semua data: 1. 'DELETE FROM Pegawai;' 'COMMIT;'
+                                      2. 'TRUNCATE TABLE Pegawai;'
+
 5. 'INSERT ALL
     INTO jurusan VALUES ('SI', 'Sistem Informasi')
     INTO jurusan VALUES ('IF', 'Teknik Informatika')

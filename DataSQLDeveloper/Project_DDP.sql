@@ -217,92 +217,194 @@ SELECT 1 FROM DUAL;
 
 -- 3. Query untuk Insert Data pada tabel Transaksi_Penjualan --
 INSERT ALL
-INTO Transaksi_Penjualan VALUES ('TP001', DATE '2024-01-05', 'SELESAI', 'PL001', 'PG001')
-INTO Transaksi_Penjualan VALUES ('TP002', DATE '2024-01-12', 'SELESAI', 'PL002', 'PG002')
-INTO Transaksi_Penjualan VALUES ('TP003', DATE '2024-01-20', 'DIBATALKAN', 'PL003', 'PG003')
-INTO Transaksi_Penjualan VALUES ('TP004', DATE '2024-02-01', 'SELESAI', 'PL004', 'PG004')
-INTO Transaksi_Penjualan VALUES ('TP005', DATE '2024-02-09', 'SELESAI', 'PL005', 'PG005')
-INTO Transaksi_Penjualan VALUES ('TP006', DATE '2024-02-18', 'SELESAI', 'PL006', 'PG001')
-INTO Transaksi_Penjualan VALUES ('TP007', DATE '2024-03-03', 'DIBATALKAN', 'PL007', 'PG002')
-INTO Transaksi_Penjualan VALUES ('TP008', DATE '2024-03-14', 'SELESAI', 'PL008', 'PG003')
-INTO Transaksi_Penjualan VALUES ('TP009', DATE '2024-03-22', 'SELESAI', 'PL009', 'PG004')
-INTO Transaksi_Penjualan VALUES ('TP010', DATE '2024-04-01', 'SELESAI', 'PL010', 'PG005')
-INTO Transaksi_Penjualan VALUES ('TP011', DATE '2024-04-10', 'SELESAI', 'PL011', 'PG001')
-INTO Transaksi_Penjualan VALUES ('TP012', DATE '2024-04-25', 'SELESAI', 'PL012', 'PG002')
-INTO Transaksi_Penjualan VALUES ('TP013', DATE '2024-05-03', 'DIBATALKAN', 'PL013', 'PG003')
-INTO Transaksi_Penjualan VALUES ('TP014', DATE '2024-05-14', 'SELESAI', 'PL014', 'PG004')
-INTO Transaksi_Penjualan VALUES ('TP015', DATE '2024-05-29', 'SELESAI', 'PL015', 'PG005')
-INTO Transaksi_Penjualan VALUES ('TP016', DATE '2024-06-02', 'SELESAI', 'PL016', 'PG001')
-INTO Transaksi_Penjualan VALUES ('TP017', DATE '2024-06-18', 'SELESAI', 'PL017', 'PG002')
-INTO Transaksi_Penjualan VALUES ('TP018', DATE '2024-06-27', 'DIBATALKAN', 'PL018', 'PG003')
-INTO Transaksi_Penjualan VALUES ('TP019', DATE '2024-07-05', 'SELESAI', 'PL019', 'PG004')
-INTO Transaksi_Penjualan VALUES ('TP020', DATE '2024-07-18', 'SELESAI', 'PL020', 'PG005')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP001', DATE '2024-01-05', 'SELESAI', 'PL001', 'PG001')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP002', DATE '2024-01-12', 'SELESAI', 'PL002', 'PG002')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP003', DATE '2024-01-20', 'DIBATALKAN', 'PL003', 'PG003')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP004', DATE '2024-02-01', 'SELESAI', 'PL004', 'PG004')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP005', DATE '2024-02-09', 'SELESAI', 'PL005', 'PG005')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP006', DATE '2024-02-18', 'SELESAI', 'PL006', 'PG001')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP007', DATE '2024-03-03', 'DIBATALKAN', 'PL007', 'PG002')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP008', DATE '2024-03-14', 'SELESAI', 'PL008', 'PG003')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP009', DATE '2024-03-22', 'SELESAI', 'PL009', 'PG004')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP010', DATE '2024-04-01', 'SELESAI', 'PL010', 'PG005')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP011', DATE '2024-04-10', 'SELESAI', 'PL011', 'PG001')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP012', DATE '2024-04-25', 'SELESAI', 'PL012', 'PG002')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP013', DATE '2024-05-03', 'DIBATALKAN', 'PL013', 'PG003')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP014', DATE '2024-05-14', 'SELESAI', 'PL014', 'PG004')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP015', DATE '2024-05-29', 'SELESAI', 'PL015', 'PG005')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP016', DATE '2024-06-02', 'SELESAI', 'PL016', 'PG001')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP017', DATE '2024-06-18', 'SELESAI', 'PL017', 'PG002')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP018', DATE '2024-06-27', 'DIBATALKAN', 'PL018', 'PG003')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP019', DATE '2024-07-05', 'SELESAI', 'PL019', 'PG004')
+INTO Transaksi_Penjualan (ID_Transaksi, Tanggal_Transaksi, Status_Penjualan, ID_Pelanggan, ID_Pegawai) VALUES ('TP020', DATE '2024-07-18', 'SELESAI', 'PL020', 'PG005')
 SELECT 1 FROM dual;
 
 
 -- 4. Query untuk Insert Data pada tabel Detail_Penjualan --
 INSERT ALL
-INTO Detail_Penjualan VALUES ('DP001', 250000000, 0,        250000000, 'MB001', 'TP001')
-INTO Detail_Penjualan VALUES ('DP002', 320000000, 1.56,     315008000, 'MB002', 'TP002')
-INTO Detail_Penjualan VALUES ('DP003', 180000000, 0,        180000000, 'MB003', 'TP003')
-INTO Detail_Penjualan VALUES ('DP004', 450000000, 2.22,     440010000, 'MB004', 'TP004')
-INTO Detail_Penjualan VALUES ('DP005', 520000000, 2.88,     505024000, 'MB005', 'TP005')
-INTO Detail_Penjualan VALUES ('DP006', 275000000, 0,        275000000, 'MB006', 'TP006')
-INTO Detail_Penjualan VALUES ('DP007', 310000000, 0.97,     307000000,      'MB007', 'TP007')
-INTO Detail_Penjualan VALUES ('DP008', 210000000, 0,        210000000, 'MB008', 'TP008')
-INTO Detail_Penjualan VALUES ('DP009', 385000000, 1.82,     378000000,      'MB009', 'TP009')
-INTO Detail_Penjualan VALUES ('DP010', 600000000, 3.33,     580000000,      'MB010', 'TP010')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP001', 250000000, 0,        250000000, 'MB001', 'TP001')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP002', 320000000, 1.56,     315008000, 'MB002', 'TP002')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP003', 180000000, 0,        180000000, 'MB003', 'TP003')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP004', 450000000, 2.22,     440010000, 'MB004', 'TP004')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP005', 520000000, 2.88,     505024000, 'MB005', 'TP005')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP006', 275000000, 0,        275000000, 'MB006', 'TP006')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP007', 310000000, 0.97,     307000000,      'MB007', 'TP007')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP008', 210000000, 0,        210000000, 'MB008', 'TP008')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP009', 385000000, 1.82,     378000000,      'MB009', 'TP009')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP010', 600000000, 3.33,     580000000,      'MB010', 'TP010')
 
-INTO Detail_Penjualan VALUES ('DP011', 230000000, 0,        230000000, 'MB011', 'TP011')
-INTO Detail_Penjualan VALUES ('DP012', 260000000, 0.96,     257504000, 'MB012', 'TP012')
-INTO Detail_Penjualan VALUES ('DP013', 195000000, 0,        195000000, 'MB013', 'TP013')
-INTO Detail_Penjualan VALUES ('DP014', 340000000, 1.47,     335002000, 'MB014', 'TP014')
-INTO Detail_Penjualan VALUES ('DP015', 410000000, 1.95,     402000000,      'MB015', 'TP015')
-INTO Detail_Penjualan VALUES ('DP016', 285000000, 0,        285000000, 'MB016', 'TP016')
-INTO Detail_Penjualan VALUES ('DP017', 330000000, 1.21,     326000000,      'MB017', 'TP017')
-INTO Detail_Penjualan VALUES ('DP018', 205000000, 0,        205000000, 'MB018', 'TP018')
-INTO Detail_Penjualan VALUES ('DP019', 370000000, 1.62,     364000000,      'MB019', 'TP019')
-INTO Detail_Penjualan VALUES ('DP020', 495000000, 2.42,     483000000,      'MB020', 'TP020')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP011', 230000000, 0,        230000000, 'MB011', 'TP011')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP012', 260000000, 0.96,     257504000, 'MB012', 'TP012')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP013', 195000000, 0,        195000000, 'MB013', 'TP013')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP014', 340000000, 1.47,     335002000, 'MB014', 'TP014')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP015', 410000000, 1.95,     402000000,      'MB015', 'TP015')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP016', 285000000, 0,        285000000, 'MB016', 'TP016')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP017', 330000000, 1.21,     326000000,      'MB017', 'TP017')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP018', 205000000, 0,        205000000, 'MB018', 'TP018')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP019', 370000000, 1.62,     364000000,      'MB019', 'TP019')
+INTO Detail_Penjualan (ID_Detail_Penjualan, Harga, Diskon, Subtotal, ID_Mobil, ID_Transaksi) VALUES ('DP020', 495000000, 2.42,     483000000,      'MB020', 'TP020')
 SELECT 1 FROM dual;
 
 
 -- 5. Query untuk Insert Data pada tabel Metode_Pembayaran --
 INSERT ALL
-    INTO Metode_Pembayaran VALUES ('MP001', 'CASH',           'LUNAS',        'TP001')
-    INTO Metode_Pembayaran VALUES ('MP002', 'TRANSFER BANK',  'LUNAS',        'TP002')
-    INTO Metode_Pembayaran VALUES ('MP003', 'CASH',           'LUNAS',        'TP003')
-    INTO Metode_Pembayaran VALUES ('MP004', 'TRANSFER BANK',  'LUNAS',        'TP004')
-    INTO Metode_Pembayaran VALUES ('MP005', 'DEBIT',          'LUNAS',        'TP005')
-    INTO Metode_Pembayaran VALUES ('MP006', 'CASH',           'BELUM LUNAS',  'TP006')
-    INTO Metode_Pembayaran VALUES ('MP007', 'KREDIT',         'BELUM LUNAS',  'TP007')
-    INTO Metode_Pembayaran VALUES ('MP008', 'TRANSFER BANK',  'LUNAS',        'TP008')
-    INTO Metode_Pembayaran VALUES ('MP009', 'CASH',           'LUNAS',        'TP009')
-    INTO Metode_Pembayaran VALUES ('MP010', 'KREDIT',         'BELUM LUNAS',  'TP010')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP001', 'CASH',           'LUNAS',        'TP001')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP002', 'TRANSFER BANK',  'LUNAS',        'TP002')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP003', 'CASH',           'LUNAS',        'TP003')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP004', 'TRANSFER BANK',  'LUNAS',        'TP004')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP005', 'DEBIT',          'LUNAS',        'TP005')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP006', 'CASH',           'BELUM LUNAS',  'TP006')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP007', 'KREDIT',         'BELUM LUNAS',  'TP007')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP008', 'TRANSFER BANK',  'LUNAS',        'TP008')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP009', 'CASH',           'LUNAS',        'TP009')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP010', 'KREDIT',         'BELUM LUNAS',  'TP010')
 
-    INTO Metode_Pembayaran VALUES ('MP011', 'DEBIT',          'LUNAS',        'TP011')
-    INTO Metode_Pembayaran VALUES ('MP012', 'TRANSFER BANK',  'LUNAS',        'TP012')
-    INTO Metode_Pembayaran VALUES ('MP013', 'CASH',           'LUNAS',        'TP013')
-    INTO Metode_Pembayaran VALUES ('MP014', 'KREDIT',         'BELUM LUNAS',  'TP014')
-    INTO Metode_Pembayaran VALUES ('MP015', 'TRANSFER BANK',  'LUNAS',        'TP015')
-    INTO Metode_Pembayaran VALUES ('MP016', 'CASH',           'BELUM LUNAS',  'TP016')
-    INTO Metode_Pembayaran VALUES ('MP017', 'DEBIT',          'LUNAS',        'TP017')
-    INTO Metode_Pembayaran VALUES ('MP018', 'KREDIT',         'BELUM LUNAS',  'TP018')
-    INTO Metode_Pembayaran VALUES ('MP019', 'TRANSFER BANK',  'LUNAS',        'TP019')
-    INTO Metode_Pembayaran VALUES ('MP020', 'CASH',           'LUNAS',        'TP020')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP011', 'DEBIT',          'LUNAS',        'TP011')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP012', 'TRANSFER BANK',  'LUNAS',        'TP012')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP013', 'CASH',           'LUNAS',        'TP013')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP014', 'KREDIT',         'BELUM LUNAS',  'TP014')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP015', 'TRANSFER BANK',  'LUNAS',        'TP015')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP016', 'CASH',           'BELUM LUNAS',  'TP016')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP017', 'DEBIT',          'LUNAS',        'TP017')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP018', 'KREDIT',         'BELUM LUNAS',  'TP018')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP019', 'TRANSFER BANK',  'LUNAS',        'TP019')
+    INTO Metode_Pembayaran (ID_Pembayaran, Metode, Status_Bayar, ID_Transaksi) VALUES ('MP020', 'CASH',           'LUNAS',        'TP020')
 SELECT 1 FROM dual;
 
 
 -- 6. Query untuk Insert Data pada tabel Pegawai --
 INSERT ALL
-INTO Pegawai VALUES ('PG001','Paijo','Admin','081234560001','paijo@elegancemotors.com','paijo','password123')
-INTO Pegawai VALUES ('PG002','Dalijo','Sales','081234560002','dalijo@elegancemotors.com','dalijo','password123')
-INTO Pegawai VALUES ('PG003','Bagong','Sales','081234560003','bagong@elegancemotors.com','bagong','password123')
-INTO Pegawai VALUES ('PG004','Gareng','Sales','081234560004','gareng@elegancemotors.com','gareng','password123')
-INTO Pegawai VALUES ('PG005','Petruk','Finance','081234560005','petruk@elegancemotors.com','petruk','password123')
+INTO Pegawai (ID_Pegawai, Nama, Jabatan, No_HP, Email, Username, Password) VALUES ('PG001','Paijo','Admin','081234560001','paijo@elegancemotors.com','paijo','password123')
+INTO Pegawai (ID_Pegawai, Nama, Jabatan, No_HP, Email, Username, Password) VALUES ('PG002','Dalijo','Sales','081234560002','dalijo@elegancemotors.com','dalijo','password123')
+INTO Pegawai (ID_Pegawai, Nama, Jabatan, No_HP, Email, Username, Password) VALUES ('PG003','Bagong','Sales','081234560003','bagong@elegancemotors.com','bagong','password123')
+INTO Pegawai (ID_Pegawai, Nama, Jabatan, No_HP, Email, Username, Password) VALUES ('PG004','Gareng','Sales','081234560004','gareng@elegancemotors.com','gareng','password123')
+INTO Pegawai (ID_Pegawai, Nama, Jabatan, No_HP, Email, Username, Password) VALUES ('PG005','Petruk','Finance','081234560005','petruk@elegancemotors.com','petruk','password123')
 SELECT 1 FROM dual;
 
--- Testing Query --
+-- Query untuk mengubbah data/ mengupdate data --
+UPDATE Mobil SET Tahun = 2023 WHERE ID_Mobil = 'MB001';
+select * from mobil;
 
 
 
+-- Query JOIN --
+-- 1. Query JOIN Mobil dengan Detail_Penjualan
+SELECT 
+    M.ID_Mobil,
+    M.Merek,
+    M.Model,
+    M.Tahun,
+    D.Subtotal
+FROM Mobil M
+JOIN Detail_Penjualan D
+    ON M.ID_Mobil = D.ID_Mobil;
 
+-- 2. Query JOIN Transaksi_Penjualan dengan Pelanggan --
+SELECT 
+    T.ID_Transaksi,
+    T.Tanggal_Transaksi,
+    P.Nama AS Nama_Pelanggan,
+    P.No_HP
+FROM Transaksi_Penjualan T
+JOIN Pelanggan P
+    ON T.ID_Pelanggan = P.ID_Pelanggan;
+
+-- 3. Query JOIN 3 tabel: Transaksi_Penjualan → Detail_Penjualan → Mobil --
+SELECT 
+    T.ID_Transaksi,
+    T.Tanggal_Transaksi,
+    M.Merek,
+    M.Model,
+    D.Subtotal
+FROM Transaksi_Penjualan T
+JOIN Detail_Penjualan D
+    ON T.ID_Transaksi = D.ID_Transaksi
+JOIN Mobil M
+    ON D.ID_Mobil = M.ID_Mobil;
+
+-- 4. Query JOIN Transaksi_Penjualan dengan Metode_Pembayaran
+SELECT 
+    T.ID_Transaksi,
+    T.Tanggal_Transaksi,
+    M.Metode,
+    M.Status_Bayar
+FROM Transaksi_Penjualan T
+JOIN Metode_Pembayaran M
+    ON T.ID_Transaksi = M.ID_Transaksi;
+
+-- 5. Query JOIN Transaksi_Penjualan dengan Pegawai
+SELECT 
+    T.ID_Transaksi,
+    P.Nama AS Nama_Pegawai,
+    P.Jabatan
+FROM Transaksi_Penjualan T
+JOIN Pegawai P
+    ON T.ID_Pegawai = P.ID_Pegawai;
+
+
+
+-- Query Group Function --
+-- 1. Query untuk hitung total Mobil yang tersedia (COUNT) --
+SELECT 
+    COUNT(*) AS Total_Mobil_Tersedia
+FROM Mobil
+WHERE Status_Mobil = 'TERSEDIA';
+
+-- 2. Query untuk hitung total pendapatan dari seluruh penjualan (SUM) --
+SELECT 
+    SUM(Subtotal) AS Total_Pendapatan
+FROM Detail_Penjualan;
+
+-- 3. Query untuk hitung rata-rata harga Mobil yang dijual (AVG) --
+SELECT 
+    AVG(Harga_Jual) AS Rata_Rata_Harga
+FROM Mobil;
+
+-- 4. Query untuk hitung total penjualan berdasarkan merek (COUNT & SUM) --
+SELECT 
+    M.Merek,
+    COUNT(*) AS Jumlah_Terjual,
+    SUM(D.Subtotal) AS Total_Pendapatan
+FROM Detail_Penjualan D
+JOIN Mobil M
+    ON D.ID_Mobil = M.ID_Mobil
+GROUP BY M.Merek;
+
+-- 5. Query untuk menampilkan jumlah Transaksi bedasarkan status Transaksi (COUNT) --
+SELECT 
+    Status_Penjualan,
+    COUNT(*) AS Jumlah_Transaksi
+FROM Transaksi_Penjualan
+GROUP BY Status_Penjualan;
+
+-- 6. Query untuk melihat pendapatan dari pembelian setiap Pelanggan (COUNT & SUM) --
+SELECT 
+    P.Nama AS Nama_Pelanggan,
+    COUNT(T.ID_Transaksi) AS Jumlah_Transaksi,
+    SUM(D.Subtotal) AS Total_Belanja
+FROM Pelanggan P
+JOIN Transaksi_Penjualan T
+    ON P.ID_Pelanggan = T.ID_Pelanggan
+JOIN Detail_Penjualan D
+    ON T.ID_Transaksi = D.ID_Transaksi
+GROUP BY P.Nama;

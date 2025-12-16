@@ -1,12 +1,12 @@
-select * from all_users;
+SELECT * FROM all_users;
 
-select table_name from user_tables;
+SELECT table_name FROM user_tables;
 
-select * from produk;
+SELECT * FROM produk;
 
-select * from mahasiswa;
+SELECT * FROM mahasiswa;
 
-drop table produk;
+DROP TABLE produk;
 
 -- 2. BUAT TABEL PRODUK (Untuk latihan SUM, AVG, COUNT)
 CREATE TABLE Produk (

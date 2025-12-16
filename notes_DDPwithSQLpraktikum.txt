@@ -86,6 +86,9 @@ Digunakan untuk membuat table sederhana menggunakan Query.
                                                  VALUES (TO_DATE('dd-mm-yyyy', 'dd-mm-yyyy'));'
 
 2. 'SELECT * FROM (nama_table);' = Digunakan untuk menampilkan semua data pada Table.
+   'SELECT Pekerjaan FROM Karyawan;' = Digunakan untuk melihat kolom pada suatu table
+   'SELECT Nama, Pekerjaan FROM Karyawan;' = Digunakan untuk melihat lebih dari satu kolom pada-
+                                             suatu table.
 
 3. 'UPDATE (nama_table) SET (nama_kolom) = (data_yang_diupdate) WHERE (nama_id) = (nomor_id);'
    Digunakan untuk mengupdate Data Kolom pada suatu Table.
@@ -165,3 +168,7 @@ Digunakan untuk membuat table sederhana menggunakan Query.
    kita tidak perlu menggunakan kode bahasa SQL, tetapi kita akan langsung menggunakan kode bahasa PHP, yang nantinya pada-
    setiap data yang kita inputkan menggunakan kode bahasa PHP tersebut, akan langsung otomatis masuk ke Blueprint database-
    framework 'Laravel' yang kita gunakan.
+2. DDL (Data Definition Language)   = Digunakan untuk membangun data.
+3. DML (Data Manipulation Language) = Digunakan untuk merubah data.
+4. DQL (Data Query Language)        = Digunakan untuk menampilkan data.
+5. JOIN                             = Digunakan untuk menggabungkan data.

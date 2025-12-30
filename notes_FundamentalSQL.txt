@@ -29,3 +29,12 @@ Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
     Wajib membuat kolom/attribut secara manual untuk menyimpan Foreign Key.
     1. Wajib punya kolom FK.
     2. Baru bisa mempunyai Foreign Key.
+
+=> Stuktur dasar SQL:
+SELECT
+FROM
+JOIN
+WHERE
+GROUP BY
+HAVING
+ORDER BY

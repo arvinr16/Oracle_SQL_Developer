@@ -50,3 +50,5 @@ Kalau tidak ada FK langsung, berarti:
 "Harus lewat tabel perantara"
 2. Apakah setiap JOIN sudah punya ON?
 3. Apakah ON sudah FK -> PK?
+4. "Kalau data tidak ada di satu tabel,
+    maka jalur relasi harus diikuti satu per satu"

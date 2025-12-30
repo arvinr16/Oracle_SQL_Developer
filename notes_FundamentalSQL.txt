@@ -1,6 +1,10 @@
 ==> Notes Fundamental SQL (Structure Query Language) <==
 Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
 
+=> Singkatan:
+1. PK    = Primary Key
+2. FK    = Foreign Key
+
 => Persamaan antara Oracle SQL Data Modeler dan Oracle SQL Developer
 1. Entitas  =   Tabel
    >Oracle SQL Data Modeler

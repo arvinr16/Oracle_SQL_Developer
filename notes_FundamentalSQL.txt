@@ -38,3 +38,9 @@ WHERE
 GROUP BY
 HAVING
 ORDER BY
+
+=> Logika yang benar ketika kita ingin membuat JOIN:
+Setiap mau JOIN, tanyakan:
+"FK di tabel ini menunjuk ke PK tabel mana ya?"
+Kalau tidak ada FK langsung, berarti:
+"Harus lewat tabel perantara"

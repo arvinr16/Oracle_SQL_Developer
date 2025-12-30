@@ -49,3 +49,4 @@ ORDER BY
 Kalau tidak ada FK langsung, berarti:
 "Harus lewat tabel perantara"
 2. Apakah setiap JOIN sudah punya ON?
+3. Apakah ON sudah FK -> PK?

@@ -54,3 +54,6 @@ Kalau tidak ada FK langsung, berarti:
 3. Apakah ON sudah FK -> PK?
 4. "Kalau data tidak ada di satu tabel,
     maka jalur relasi harus diikuti satu per satu"
+5. Semua kolom yang mau ditampilkan harus berada di satu SELECT.
+6. "Jika di SELECT ada fungsi Agregat (COUNT, SUM, dll),
+   maka kolom lain HARUS ada di GROUP BY" (WAJIB DIHAFAL)

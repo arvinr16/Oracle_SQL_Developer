@@ -18,6 +18,11 @@ desc transaksi_penjualan;
 desc detail_penjualan;
 
 select * from mobil;
+select * from pelanggan;
+select * from pegawai;
+select * from metode_pembayaran;
+select * from transaksi_penjualan;
+select * from detail_penjualan;
 
 -- 1. Tampilkan nama pelanggan, tanggal transaksi, dan status penjualan
 select
@@ -55,3 +60,23 @@ join mobil m
 where m.status_mobil = 'TERJUAL';
 
 -- 4. Hitung jumlah transaksi yang pernah dilakukan oleh setiap pelanggan
+select
+    n.nama,
+    t.status_penjualan,
+    count(*) as jumlah_transaksi
+from pelanggan n
+join transaksi_penjualan t
+    on t.id_pelanggan = n.id_pelanggan
+where t.status_penjualan = 'SELESAI'
+group by n.nama, t.status_penjualan;
+    
+select
+nama,
+    count (*) as transaksi_pelanggan
+from pelanggan
+group by nama;
+    n.nama as nama_pelanggan
+from pelanggan n
+join transaksi_penjualan t
+    on t.id_pelanggan = n.id_pelanggan;
+    

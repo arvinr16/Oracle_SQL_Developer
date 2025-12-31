@@ -35,13 +35,15 @@ Berikut adalah dokumentasi saya mengenai dasar-dasar SQL
     2. Baru bisa mempunyai Foreign Key.
 
 => Stuktur dasar SQL:
-SELECT
-FROM
-JOIN
-WHERE
-GROUP BY
-HAVING
-ORDER BY
+1. SELECT
+   FROM
+   JOIN
+   WHERE
+   GROUP BY
+   HAVING
+   ORDER BY
+2. SELECT hanya boleh satu saja ditulis didalam query
+   FROM hanya boleh satu saja ditulis didalam query.
 
 => Logika yang benar ketika kita ingin membuat JOIN:
 1. Setiap mau JOIN, tanyakan:

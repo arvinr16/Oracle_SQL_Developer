@@ -79,4 +79,23 @@ group by nama;
 from pelanggan n
 join transaksi_penjualan t
     on t.id_pelanggan = n.id_pelanggan;
+
+-- Latihan sebelum responsi
+-- 1. Melihat total pembayaran yang sudah LUNAS
+select
+    status_bayar,
+    count(*) as Sudah_Lunas_Apa_Belum
+    from metode_pembayaran
+    where status_bayar = 'LUNAS'
+group by status_bayar;
+select status_bayar from metode_pembayaran;
+
+-- 2. Menghitung total pendapatan dari seluruh penjualan
+select
+    id_mobil,
+    TO_CHAR(subtotal, 'L999G999G999D00') as "Harga Rupiah"
+from detail_penjualan; --Lanjut belajar disini
     
+select * from transaksi_penjualan;
+select * from metode_pembayaran;
+select * from detail_penjualan;
